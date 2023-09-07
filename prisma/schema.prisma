@@ -15,3 +15,13 @@ model Client {
   name     String
   birthday DateTime
 }
+
+model User {
+  id       String @id
+  name     String
+  username String
+  googleId String
+  email    String @unique
+  picture  String
+  password String
+}
